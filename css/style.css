@@ -51,6 +51,12 @@ html{
     padding: 1rem .5rem;
     text-align: center;
 }
+
+.btn{
+    background-color: var(--tertiary-color);
+    border-radius: 15px;
+    padding: 10px;
+}
 /* FINE REGOLE COMUNI */
 
 
@@ -133,6 +139,10 @@ header .fc{
     background-color: #fff;
     padding: 2rem .75rem;
 }
+
+#why-us .fi *{
+    margin: 1rem 0;
+}
 /* FINE WHY-US */
 
 
@@ -145,16 +155,29 @@ header .fc{
 #about-us .container p{
     line-height: 2rem;
 }
+/* FINE ABOUT US */
 
 
+/* SEZIONE GET-STARTED */
+#get-started{
+    background-color: var(--tertiary-color);
+}
+
+#get-started .btn{
+    color: var(--tertiary-color);
+    background-color: #fff;
+}
+/* FINE GET-STARTED */
 
 
+/* INIZIO FOOTER */
+footer{
+    background-color: #333;
+}
 
-
-
-
-
-
+footer *{
+    padding: 1.5rem .5rem;
+}
 
 
 
@@ -204,6 +227,11 @@ header .fc{
     #about-us .container{
         display: flex;
     }
+
+    footer .container{
+        width: 50%;
+        margin: auto;
+    }
 }
 
 
@@ -226,5 +254,10 @@ header .fc{
 
     #why-us .fc .fi{
         width: calc((100% / 3) - 1.5rem);
+    }
+
+    footer .container{
+        width: 50%;
+        margin: auto;
     }
 }
