@@ -9,9 +9,9 @@ html{
 }
 
 :root{
-    --primary-color: rgb(10, 119, 221);
-    --secondary-color: rgb(142, 194, 253);
-    --tertiary-color: rgb(154, 64, 228);
+    --primary-color: #0080ff;
+    --secondary-color: #b3d9ff;
+    --tertiary-color: #bf80ff;
 }
 
 
@@ -20,21 +20,38 @@ html{
     height: 500px;
 }
 
+.debug #testimonials .fi{
+    height: 200px;
+}
+
+
+
+/* FINE DEBUG */
+
 
 /* REGOLE COMUNI */
 .fc{
     display: flex;
     flex-wrap: wrap;
     padding: 1rem .5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .fi{
     margin: 1rem .5rem;
+    padding: 1rem .5rem;
 }
 
 .bg-white{
     background-color: #fff;
 }
+
+.container *{
+    padding: 1rem .5rem;
+    text-align: center;
+}
+/* FINE REGOLE COMUNI */
 
 
 
@@ -53,6 +70,8 @@ header .fc{
 .hidden{
     display: none;
 }
+/* FINE HEADER */
+
 
 
 /* MAIN */
@@ -79,6 +98,81 @@ header .fc{
     background-color: var(--tertiary-color);
     text-align: center;
 }
+/* FINE PLANNING */
+
+
+
+/* SEZIONE TESTIMONIALS */
+#testimonials .fc{
+    background-color: var(--tertiary-color);
+    margin: 1rem .75rem;
+}
+
+#testimonials .fi-image{
+    width: 20%;
+}
+
+#testimonials .fi{
+    width: 80%;
+}
+/* FINE TESTIMONIALS */
+
+
+
+/* SEZIONE WHY-US */
+#why-us{
+    background-color: var(--tertiary-color);
+}
+
+#why-us >h2{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#why-us .fi{
+    background-color: #fff;
+    padding: 2rem .75rem;
+}
+/* FINE WHY-US */
+
+
+
+/* SEZIONE ABOUT-US */
+#about-us .container *{
+    text-align: left;
+}
+
+#about-us .container p{
+    line-height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -98,6 +192,18 @@ header .fc{
         flex-wrap: wrap;
         width: calc(66.666% - 1rem)
     }
+
+    #testimonials .fc{
+        flex-wrap: nowrap;
+    }
+
+    #why-us .fc .fi{
+        width: calc((100% / 2) - 1.5rem);
+    }
+
+    #about-us .container{
+        display: flex;
+    }
 }
 
 
@@ -116,5 +222,9 @@ header .fc{
         flex-wrap: nowrap;
         justify-content: center;
         align-items: flex-end;
+    }
+
+    #why-us .fc .fi{
+        width: calc((100% / 3) - 1.5rem);
     }
 }
