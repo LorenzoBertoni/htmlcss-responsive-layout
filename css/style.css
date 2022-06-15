@@ -7,3 +7,114 @@
 html{
     font-family: 'Open Sans', sans-serif;
 }
+
+:root{
+    --primary-color: rgb(10, 119, 221);
+    --secondary-color: rgb(142, 194, 253);
+    --tertiary-color: rgb(154, 64, 228);
+}
+
+
+/* REGOLE DI DEBUG */
+.debug #planning .fc{
+    height: 500px;
+}
+
+
+/* REGOLE COMUNI */
+.fc{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem .5rem;
+}
+
+.fi{
+    margin: 1rem .5rem;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+
+
+/* HEADER */
+header{
+    background-color: rgb(10, 119, 221);
+    width: 100%;
+}
+
+header .fc{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* MAIN */
+/* SEZIONE PRESENTATION */
+#presentation .fc{
+    flex-wrap: wrap;
+    padding: 1.5rem 0.75rem;
+}
+
+#presentation .fc .fi{
+    background-color: var(--secondary-color);
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#presentation .fc .fi *{
+    padding: 1rem 1rem;
+}
+
+
+/* SEZIONE PLANNING */
+#planning .fc{
+    background-color: var(--tertiary-color);
+    text-align: center;
+}
+
+
+
+
+
+/* MEDIA QUERY */
+/* TABLET */
+@media screen and (min-width: 768px){
+    #presentation .fc .fi{
+        width: calc((100% / 3) - 1rem);
+        margin: 1rem .5rem;
+        flex-grow: 0;
+    }
+
+    #presentation .fc .fi:first-child{
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(66.666% - 1rem)
+    }
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+    header .fc{
+        padding: 1rem 15rem;
+    }
+
+    #presentation .fc .fi:first-child{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #planning .fc{
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
