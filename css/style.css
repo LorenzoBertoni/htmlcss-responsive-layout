@@ -12,7 +12,7 @@ html{
 :root{
     --primary-color: #0080ff;
     --secondary-color: #b3d9ff;
-    --tertiary-color: #bf80ff;
+    --tertiary-color: #9593E6;
 }
 
 
@@ -41,11 +41,14 @@ html{
 
 .fi{
     margin: 1rem .5rem;
-    padding: 1rem .5rem;
 }
 
 .bg-white{
     background-color: #fff;
+}
+
+.text-white{
+    color: #fff;
 }
 
 .container *{
@@ -57,6 +60,7 @@ html{
     background-color: var(--tertiary-color);
     border-radius: 15px;
     padding: .5rem 2rem;
+    text-decoration: none;
 }
 
 .btn-white{
@@ -64,6 +68,22 @@ html{
     border-radius: 15px;
     padding: .5rem 2rem;
     color: #000;
+}
+
+.title{
+    color: var(--primary-color);
+}
+
+.rounded{
+    border-radius: 1.5rem;
+}
+
+p{
+    line-height: 2rem;
+}
+
+img{
+    width: 90%;
 }
 
 /* FINE REGOLE COMUNI */
@@ -120,22 +140,52 @@ header .hidden ul li .btn-white a{
     padding: 1.5rem 0.75rem;
 }
 
+#presentation .fi #small{
+    font-size: 1rem;
+}
+
 #presentation .fc .fi{
     background-color: var(--secondary-color);
     width: 100%;
-    margin: 1rem 0;
     text-align: center;
 }
 
-#presentation .fc .fi *{
-    padding: 1rem 1rem;
+#presentation .fc .fi *:not(img){
+    margin: 2rem 1rem;
 }
+
+#presentation .btn{
+    background-color: var(--primary-color);
+    padding: .5rem 3rem;
+    color: #fff;
+}
+
+.pres-img img{
+    margin: 2.5rem auto 0 auto;
+    display: block;
+    padding: 0;
+}
+
+#presentation .fi i{
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
 
 
 /* SEZIONE PLANNING */
 #planning .fc{
     background-color: var(--tertiary-color);
     text-align: center;
+}
+
+#planning .fi *{
+    margin: 1rem;
+}
+
+#planning .fi .circle{
+    border-radius: 50%;
+    padding: .5rem .1rem;
 }
 /* FINE PLANNING */
 
@@ -183,10 +233,6 @@ header .hidden ul li .btn-white a{
 /* SEZIONE ABOUT-US */
 #about-us .container *{
     text-align: left;
-}
-
-#about-us .container p{
-    line-height: 2rem;
 }
 /* FINE ABOUT US */
 
@@ -256,6 +302,19 @@ footer *{
         width: calc(66.666% - 1rem)
     }
 
+    #presentation .pres-info, #presentation .pres-img{
+        text-align: left;
+    }
+
+    #presentation .pres-img img{
+        width: 70%;
+        margin: 2rem auto 0 0;
+    }
+
+    #presentation .fc .resize .text{
+        margin-bottom: 23rem;
+    }
+
     #testimonials .fc{
         flex-wrap: nowrap;
     }
@@ -294,6 +353,14 @@ footer *{
     #presentation .fc .fi:first-child{
         display: flex;
         flex-wrap: nowrap;
+    }
+
+    #presentation .pres-img img{
+        width: 80%;
+    }
+
+    #presentation .fc .resize .text{
+        margin-bottom: 0rem;
     }
 
     #planning .fc{
