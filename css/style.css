@@ -405,18 +405,18 @@ footer a{
 /* DESKTOP */
 @media screen and (min-width: 992px) {
     header .fc{
-        padding: 1rem 15rem;
+        padding: 1rem 10rem;
+        justify-content: space-between;
     }
 
+ 
     header .content{
         display: none;
     }
 
-    header .hidden{
-        display: block; 
-        align-items: center;
+    header .fi .hidden{
+        display: block;
     }
-
 
     #presentation .fc .fi:first-child{
         display: flex;
