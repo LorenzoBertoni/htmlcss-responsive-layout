@@ -422,6 +422,11 @@ footer a{
         display: block;
     }
 
+    section{
+        width: 70%;
+        margin: auto;
+    }
+
     #presentation .fc .fi:first-child{
         display: flex;
         flex-wrap: nowrap;
