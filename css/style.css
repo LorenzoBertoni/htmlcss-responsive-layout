@@ -87,6 +87,8 @@ img{
 header{
     background-color: rgb(10, 119, 221);
     width: 100%;
+    position: sticky;
+    top: 0;
 }
 
 header .fc{
