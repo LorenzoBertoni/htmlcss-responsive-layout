@@ -6,6 +6,7 @@
 
 html{
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -55,8 +56,16 @@ html{
 .btn{
     background-color: var(--tertiary-color);
     border-radius: 15px;
-    padding: 10px;
+    padding: .5rem 2rem;
 }
+
+.btn-white{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: .5rem 2rem;
+    color: #000;
+}
+
 /* FINE REGOLE COMUNI */
 
 
@@ -73,8 +82,32 @@ header .fc{
     padding: 1rem 2rem;
 }
 
+header .content i{
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
 .hidden{
     display: none;
+}
+
+header .hidden ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 .5rem;
+}
+
+header .hidden ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .hidden ul li .btn-white a{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: .5rem 2rem;
+    color: #000;
 }
 /* FINE HEADER */
 
@@ -167,6 +200,13 @@ header .fc{
     color: var(--tertiary-color);
     background-color: #fff;
 }
+
+#get-started .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* FINE GET-STARTED */
 
 
@@ -240,6 +280,16 @@ footer *{
     header .fc{
         padding: 1rem 15rem;
     }
+
+    header .content{
+        display: none;
+    }
+
+    header .hidden{
+        display: block; 
+        align-items: center;
+    }
+
 
     #presentation .fc .fi:first-child{
         display: flex;
